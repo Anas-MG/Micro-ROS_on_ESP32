@@ -93,7 +93,7 @@ ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
 ##### topic list
 ![Screenshot from 2021-08-27 00-17-32](https://user-images.githubusercontent.com/49666154/131088496-16455499-6ddc-4ed7-8893-44279831ccf5.png)
 
-##### Subscribing to the topic 
+##### Subscribing to /freertos_int32_publisher 
 ![Screenshot from 2021-08-27 00-18-45](https://user-images.githubusercontent.com/49666154/131088508-f45f6365-19f5-4099-85ea-07c432b95d05.png)
 
 
