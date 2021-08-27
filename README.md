@@ -3,7 +3,7 @@
 ![esp32_cut](https://user-images.githubusercontent.com/49666154/130994513-0111f229-2535-478b-a06a-685c9498a55b.png)
 
 #### What is Micro Ros?
-##### Micro-Ros is Ros2 younger sibling, it puts ROS2 onto microcontrollers so we can publish and subscribe from microcontrollers to Ros2 .
+##### In shortcut Micro-Ros is Ros2 younger sibling, it puts ROS2 onto microcontrollers so we can publish and subscribe from microcontrollers to Ros2 .
 ##
 ##### Micro-ROS offers seven key features that make it ready for use in microcontroller-based robotic project:
 
