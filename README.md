@@ -86,7 +86,7 @@ ros2 run micro_ros_setup build_agent.sh
 # Run a micro-ROS agent << this step should be done before running the ESP32 board
 ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
 ````
-## Resutlt
+## Result
 ##### Agent
 ![Screenshot from 2021-08-27 00-12-50](https://user-images.githubusercontent.com/49666154/131087937-9c35439c-00a1-4e65-9a02-7700180a89e7.png)
 
