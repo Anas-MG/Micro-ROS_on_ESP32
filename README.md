@@ -21,18 +21,18 @@
 
 ###### ✔ Long-term maintainability and interoperability
 
-
+#
 #### ESP32 and FreeRTOS:
 ##### ESP32 makes use of FreeRTOS(Real Time Operating System) one of the three RTOSes officially supported by the micro-ROS project, which is natively used by this family of boards, and supports the latest Foxy release of ROS 2. It works both with serial and Wi-Fi transports
 
-
-#### Project Goal:
+#
+### Project Goal:
 ##### The main goal in this project is to publish a Ros2 topic from Esp32 board to to choosen IP address through wifi, I've used freertos demo app called in32publisher, it'll automatecly will be in the work space after installation, so we'll not write any code.
+##
+#### Installation:
+###### before setting up Micro-ros, you'll need to install Ros2 in the local machine to recieve ics from Micro-Ros, I've Used the offical documentation guide to installation via debian pkg https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html.
 
-##### Installation:
-###### before setting Micro-ros, you'll need to install Ros2 in the local machine to recieve ics from Micro-Ros, I've Used the offical documentation guide to installation via debian pkg https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html.
-
-##### Micro-ROS build system: 
+#### Micro-ROS build system: 
 ````
 # Source ROS 2 installation
 echo 'source /opt/ros/foxy/setup.bash' >> ~/.bashrc
@@ -60,7 +60,7 @@ colcon build
 echo 'source install/local_setup.bash' >> ~/.bashrc
 ````
 
-##### Build and flash ESP32 with freertos demo app called 'int32_publisher'
+#### Build and flash ESP32 with freertos demo app called 'int32_publisher'
 ````
 cd microros_ws
 ros2 run micro_ros_setup create_firmware_ws.sh freertos esp32
@@ -74,7 +74,7 @@ ros2 run micro_ros_setup build_firmware.sh
 ros2 run micro_ros_setup flash_firmware.sh
 ````
 
-###### Setup Micro-ros Agent: 
+##### Setup Micro-ros Agent: 
 ````
 cd microros_ws
 # Download micro-ROS-Agent packages
@@ -86,7 +86,7 @@ ros2 run micro_ros_setup build_agent.sh
 # Run a micro-ROS agent << this step should be done before running the ESP32 board
 ros2 run micro_ros_agent micro_ros_agent udp4 --port 8888
 ````
-# Resutlt
+## Resutlt
 ##### Agent
 ![Screenshot from 2021-08-27 00-12-50](https://user-images.githubusercontent.com/49666154/131087937-9c35439c-00a1-4e65-9a02-7700180a89e7.png)
 
