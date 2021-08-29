@@ -1,8 +1,8 @@
-## ESP32 with Micro-Ros
-### Micro-ros project with esp32 and freertos 
+
+## Micro-ros project with ESP32 and freeRTOS
 ![esp32_cut](https://user-images.githubusercontent.com/49666154/130994513-0111f229-2535-478b-a06a-685c9498a55b.png)
 
-#### What is Micro Ros?
+### What is Micro Ros?
 ##### In shortcut Micro-Ros is Ros2 younger sibling, it puts ROS2 onto microcontrollers so we can publish and subscribe from microcontrollers to Ros2 .
 ##
 ##### Micro-ROS offers seven key features that make it ready for use in microcontroller-based robotic project:
@@ -22,14 +22,15 @@
 ###### ✔ Long-term maintainability and interoperability
 
 #
-#### ESP32 and FreeRTOS:
+### ESP32 and FreeRTOS:
 ##### ESP32 makes use of FreeRTOS(Real Time Operating System) one of the three RTOSes officially supported by the micro-ROS project, which is natively used by this family of boards, and supports the latest Foxy release of ROS 2. It works both with serial and Wi-Fi transports
 
 #
 ### Project Goal:
-##### The main goal in this project is to publish a Ros2 topic from Esp32 board to to choosen IP address through wifi, I've used freertos demo app called in32publisher, it'll automatecly will be in the work space after installation, so we'll not write any code.
+##### The main goal in this project is to publish a Ros2 topic from Esp32 board to specific IP address , The project uses freeRTOS demo app called 'in32publisher', it will be installed within the installation of Micro-ros build system.
+
 ##
-#### Installation:
+### Installation:
 ###### before setting up Micro-ros, you'll need to install Ros2 in the local machine to recieve ics from Micro-Ros, I've Used the offical documentation guide to installation via debian pkg https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html.
 
 #### Micro-ROS build system: 
@@ -74,7 +75,7 @@ ros2 run micro_ros_setup build_firmware.sh
 ros2 run micro_ros_setup flash_firmware.sh
 ````
 
-##### Setup Micro-ros Agent: 
+#### Setup Micro-ros Agent: 
 ````
 cd microros_ws
 # Download micro-ROS-Agent packages
