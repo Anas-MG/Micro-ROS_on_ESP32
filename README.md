@@ -27,7 +27,7 @@
 
 #
 ### Project Goal:
-##### The main goal in this project is to publish a Ros2 topic from Esp32 board to specific IP address , The project uses freeRTOS demo app called 'in32publisher', it will be installed within the installation of Micro-ros build system.
+##### The main goal in this project is to learn how to publish a Ros2 topic from Esp32 board to specific IP address , I've used freeRTOS demo app called 'in32publisher' which is an available project that comes with the installation of Micro-ros.
 
 ##
 ### Installation:
